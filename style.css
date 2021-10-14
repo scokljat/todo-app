@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Roboto", sans-serif;
+}
 .container {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -14,11 +16,11 @@
   height: 100%;
 }
 .content {
-  background-color: #f5deb3;
+  background-color: #ddbebe;
   text-align: center;
 }
 .wrapper {
-  background-color: palevioletred;
+  background-color: #6c4a4a;
   margin: 70px 50px;
   border-radius: 5px;
 }
@@ -27,7 +29,7 @@
   line-height: bold;
   letter-spacing: 10px;
   margin-top: 30px;
-  color: #a52a2a;
+  color: #ededed;
 }
 .inputField {
   display: flex;
@@ -40,14 +42,19 @@ input {
   border-radius: 5px;
   width: 70%;
   background-color: #f5f5dc;
+
   font-size: 16px;
+}
+::placeholder {
+  color: #6c4a4a;
 }
 .inputField button {
   height: 50px;
   width: 60px;
   border: none;
   outline: none;
-  background: #a52a2a;
+  background: #ddbebe;
+  color: #6c4a4a;
   font-size: 22px;
   cursor: pointer;
   border-radius: 3px;
@@ -63,13 +70,19 @@ input {
   max-height: 250px;
   overflow-y: auto;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 .todoList li {
   list-style: none;
   height: 45px;
+  width: 70%;
   line-height: 45px;
   position: relative;
-  background-color: #f5a613;
+  background-color: #c89595;
   border-radius: 3px;
   margin-bottom: 8px;
   padding: 0 15px;
@@ -79,13 +92,15 @@ input {
 .todoList li span {
   position: absolute;
   right: -45px;
-  color: #ffff;
+  color: #6c4a4a;
   width: 45px;
+  height: 45px;
   text-align: center;
-  background: #a52a2a;
+  background: #ededed;
   cursor: pointer;
   border-radius: 0 3px 3px 0;
   transition: all 0.3s ease;
+  padding: 15px 0;
 }
 .todoList li:hover span {
   right: 0px;
@@ -95,12 +110,13 @@ input {
   justify-content: space-between;
   align-items: center;
   margin: 15px;
-  color: #a52a2a;
+  color: #ededed;
 }
 .footer button {
   border: none;
   outline: none;
-  background: #a52a2a;
+  background: #ddbebe;
+  color: #6c4a4a;
   font-size: 16px;
   cursor: pointer;
   border-radius: 3px;
